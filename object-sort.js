@@ -1,8 +1,9 @@
 /**
- * 
+ * @function to sort objects on any attribute of the object
  * @param {object[]} objectList List of objects to be sorted
  * @param {string} attribute Attribute to be sorted by
  * @param {boolean} natural Flag specifying whether natural sorting
+ * @returns {object[]} Sorted object list
  */
 function natsort(objectList, attribute, natural = false) {
     let sortedList = objectList;
@@ -15,10 +16,11 @@ function natsort(objectList, attribute, natural = false) {
 }
 
 /**
- * 
+ * @function to compare two objects based on the specified attribute
  * @param {object} value1 First Object
  * @param {object} value2 Second Object
  * @param {boolean} natural Flag specifying whether natural sorting
+ * @returns {number} 1 if attribute in value1 is greater than value2, -1 otherwise
  */
 function compareValues(value1, value2, natural = false) {
     const digitMatchRegex = /\d+/g;

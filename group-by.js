@@ -1,10 +1,11 @@
 // GROUP BY Method 1: Aggregate Object array data and return as Object array
 
 /**
- * 
+ * @function to aggregate Object array data and return the value of level having highest metric value
  * @param {object[]} data Object array data 
  * @param {string} keyValue Level of aggregation
  * @param {string} metric Metric to be aggregated
+ * @returns {string} Value of level having highest metric value
  */
 function maximumSales(data, keyValue, metric) {
     return [...new Set(data.map(item => item[keyValue]))]
@@ -15,10 +16,11 @@ function maximumSales(data, keyValue, metric) {
 // GROUP BY Method 2: Aggregate Object array data and return as Object
 
 /**
- * 
+ * @function to aggregate Object array data and return the value of level having highest metric value
  * @param {object} data JSON array data
  * @param {string} key Level of aggregation
  * @param {string} metric Metric to be aggregated
+ * @returns {string} Value of level having highest metric value
  */
 function maximumSales2(data, key, metric) {
     return Object.entries(data.reduce((res, item) => ({...res, [item[key]]: res[item[key]] ? res[item[key]] + item[metric] : item[metric]}), {})).sort((a, b) => b[1] - a[1])[0][0];
