@@ -1,0 +1,32 @@
+{
+  "name": "data-manipulation-examples",
+  "version": "1.0.0",
+  "description": "Examples of using map, filter, reduce and sort functions for doing data manipulation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techluv13/data-manipulation-examples.git"
+  },
+  "keywords": [
+    "Data",
+    "Manipulation",
+    "Map",
+    "Filter",
+    "Reduce",
+    "Sort",
+    "Compare"
+  ],
+  "author": "Piyush Pushkar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/techluv13/data-manipulation-examples/issues"
+  },
+  "homepage": "https://github.com/techluv13/data-manipulation-examples#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-google": "^0.12.0"
+  }
+}
